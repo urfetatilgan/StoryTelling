@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#7400B3"
+    android:paddingTop="10dp"
+    android:layout_margin="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_view_item"
+    >
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="96dp"
+        android:id="@+id/icon_view"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:padding="1dp"
+        android:src="@drawable/pp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_view"
+        android:id="@+id/relat"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ani_baslik"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            tools:text="baslik"
+            android:textColor="#00FF0B"/>
+
+        <TextView
+            android:id="@+id/ani_tarih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ani_baslik"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="#00FF0B"
+            tools:text="tarih" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ani_location"
+            android:layout_below="@+id/ani_tarih"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="#00FF0B"
+            android:text="lokasyon"/>
+        <TextView
+            android:id="@+id/ani_mod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ani_location"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="#00FF0B"
+            android:text="mod" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/buttonGoster"
+            android:paddingLeft="10dp"
+            android:text="Göster"
+            android:layout_below="@+id/ani_mod"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
